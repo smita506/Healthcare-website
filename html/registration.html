@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico Doctor's App Registration</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- icon css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- reg css  -->
+    <link rel="stylesheet" href="../css/registration.css">
+
+    <!-- footer css  -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        /* .regContainer{
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10rem;
+        }
+        .form-check-input,
+        .form-control {
+            border-color: rgba(0, 0, 0, 0.288) !important;
+            border-width: 2px !important;
+            border-style: solid !important;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- nav starts here  -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Healthcare.in</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Health Care</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appointment.html">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="registration.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">LogIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">LogOut</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav ends here  -->
+
+    <br> <br> <br>
+    <!-- reg start  -->
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <h2>HEALTHCARE.in</h2>
+            <div class="form-group">
+                <h6><label for="firstName" class="col-sm-3 control-label">First Name :</label></h6>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="Enter First Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="lastName" class="col-sm-4 control-label">Middle & Last Name :</label></h6>
+                <div class="col-sm-9">
+                    <input type="text" id="lastName" placeholder="Enter Middle & Last Name" class="form-control"
+                        autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="lastName" class="col-sm-4 control-label">User Name<span>*</span> :</label></h6>
+                <div class="col-sm-9">
+                    <input type="text" id="lastName" placeholder="Enter Username" class="form-control" autofocus
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="email" class="col-sm-3 control-label">Email ID<span>*</span> : </label></h6>
+                <div class="col-sm-9">
+                    <input type="email" id="email" placeholder="Enter Email" class="form-control" name="email" autofocus
+                        required>
+                    <span class="help-block">Your Email ID won't be disclosed anywhere </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="password" class="col-sm-3 control-label">Password<span>*</span> :</label></h6>
+                <div class="col-sm-9">
+                    <input type="password" id="password" placeholder="Enter Password" class="form-control" autofocus
+                        required>
+                    <span class="help-block">Your Password won't be disclosed anywhere </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="password" class="col-sm-4 control-label">Confirm Password<span>*</span> :</label></h6>
+                <div class="col-sm-9">
+                    <input type="password" id="password" placeholder="Enter Password" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="birthDate" class="col-sm-3 control-label">Date of Birth<span>*</span> :</label></h6>
+                <div class="col-sm-9">
+                    <input type="date" id="birthDate" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="phoneNumber" class="col-sm-4 control-label">Contact number<span>*</span> :</label></h6>
+                <div class="col-sm-9">
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Enter Phone number" class="form-control"
+                        autofocus required>
+                    <span class="help-block">Your phone number won't be disclosed anywhere </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <h6><label for="phoneNumber" class="col-sm-6 control-label">Alternative Contact number :</label></h6>
+                <div class="col-sm-9">
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Enter Phone number" class="form-control">
+                    <span class="help-block">Your phone number won't be disclosed anywhere </span>
+                </div>
+            </div>
+            <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                <h6 class="mb-0 me-4">Gender<span>*</span> : </h6>
+
+                <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option1" />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                </div>
+
+                <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option2" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                </div>
+
+                <div class="form-check form-check-inline mb-0">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="option3" />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                </div>
+
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block">*Required fields</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Register</button>
+            <div class="col-sm-8">
+                <a href="login.html">Already have an account? Sign in here</a>
+            </div>
+
+        </form> <!-- /form -->
+    </div> <!-- ./container -->
+    <!-- reg end  -->
+    <br>
+    <!-- footer starts here  -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>healthcare@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="../index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png"
+                                        class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://twitter.com/"><i class="fa fa-twitter-square"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fa fa-instagram"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"
+                                        style="font-size:24px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- another footer  -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container my-5">
+
+            <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">About Healthcare.in</h5>
+
+                            <p>
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti.
+                            </p>
+
+                            <p>
+                                Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                molestias.
+                            </p>
+
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                            <table class="table text-center text-white">
+                                <tbody class="font-weight-normal">
+                                    <tr>
+                                        <td>Mon - Thu:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri - Sat:</td>
+                                        <td>8.30am - 8pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>9am - 10pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+
+            </footer>
+
+        </div>
+        <!-- End of .container -->
+
+        </div>
+        <!-- End of .container -->
+
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, All Right Reserved <b><a href="../index.html">Healthcare.in</a></b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer ends here  -->
+
+    <!-- validation js start -->
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <!-- validation js end  -->
+
+</body>
+
+</html>

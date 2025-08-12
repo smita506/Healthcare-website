@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico Doctor's App Appointment</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- icon css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- appointment css  -->
+    <link rel="stylesheet" href="../css/appointment.css">
+    <!-- footer css  -->
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <!-- nav starts here  -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Healthcare.in</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Health Care</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="appointment.html">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">LogIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">LogOut</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav ends here  -->
+
+    <br> <br>
+    <!-- card starts here  -->
+    <div class="container bootstrap snippets bootdeys">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Health Care</h6>
+                            <h4 class="title"><a href="#">Heart</a></h4>
+                            <p class="description">The heart pumps blood, supplying the body with oxygen and nutrients
+                                through its rhythmic contractions. </p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Health Care</h6>
+                            <h4 class="title"><a href="#">Spine</a></h4>
+                            <p class="description">
+                                The spine, essential for support and flexibility, protects the spinal cord and
+                                facilitates movement in the human body. </p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Health Care</h6>
+                            <h4 class="title"><a href="#">Orthopaedics</a></h4>
+                            <p class="description">
+                                Orthopaedics treats musculoskeletal conditions to enhance function and reduce pain in
+                                bones and joints. </p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Health Care</h6>
+                            <h4 class="title"><a href="#">Cancer care</a></h4>
+                            <p class="description">
+                                Cancer care is a holistic approach encompassing diagnosis support tailored to
+                                individuals dealing with cancer. </p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Health Care</h6>
+                            <h4 class="title"><a href="#">Transplants</a></h4>
+                            <p class="description">
+                                Transplants save lives by replacing damaged organs with healthy ones from donors through
+                                surgical procedures.
+                            </p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
+                        <div class="content">
+                            <h6 class="category">Health Care</h6>
+                            <h4 class="title"><a href="#">Neurosciences</a></h4>
+                            <p class="description">Neurosciences study the nervous system, exploring the brain, spinal
+                                cord, and nerves to understand functions and disorders. </p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card ends here  -->
+
+    <br> <br>
+
+    <!-- list starts here  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">
+                    Our Experts
+                </h1>
+                <h3 class="text-center">
+                    Please check your booking slot and guidance.
+                </h3>
+            </div>
+            <div id="no-more-tables">
+                <table class="col-md-12 table-bordered table-striped table-condensed cf">
+                    <thead class="cf">
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Doctor's Name</th>
+                            <th class="numeric">Specialist</th>
+                            <th class="numeric">Time</th>
+                            <th class="numeric">Fees</th>
+                            <th class="numeric">Ph. No.</th>
+                            <!-- <th class="numeric">High</th>
+                            <th class="numeric">Low</th> -->
+                            <th class="numeric">Lc. Reg. No.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-title="Sr. No. :">1.</td>
+                            <td data-title="Doctor's Name :">Dr. Soumi Roy Chowdhury</td>
+                            <td data-title="Specialist :" class="numeric">Cardiologist</td>
+                            <td data-title="Time :" class="numeric">08-11 AM & 05-07 PM</td>
+                            <td data-title="Fees :" class="numeric">1000/-</td>
+                            <td data-title="Ph. No. :" class="numeric">8476028710</td>
+                            <!-- <td data-title="High" class="numeric">$1.39</td>
+                            <td data-title="Low" class="numeric">$1.38</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDSRC1589</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">2.</td>
+                            <td data-title="Doctor's Name :">Dr. Suman Mondal</td>
+                            <td data-title="Specialist :" class="numeric">Neurologist</td>
+                            <td data-title="Time :" class="numeric">10-11 AM & 04-06 PM</td>
+                            <td data-title="Fees :" class="numeric">1500/-</td>
+                            <td data-title="Ph. No. :" class="numeric">9760187530</td>
+                            <!-- <td data-title="High" class="numeric">$1.15</td>
+                            <td data-title="Low" class="numeric">$1.13</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDSM4601</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">3.</td>
+                            <td data-title="Doctor's Name :">Dr. Subhasish Baidya</td>
+                            <td data-title="Specialist :" class="numeric">Orthopedic</td>
+                            <td data-title="Time :" class="numeric">12-02 PM & 05-08 PM</td>
+                            <td data-title="Fees :" class="numeric">1700/-</td>
+                            <td data-title="Ph. No. :" class="numeric">4877770510</td>
+                            <!-- <td data-title="High" class="numeric">$4.05</td>
+                            <td data-title="Low" class="numeric">$4.00</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDSB7412</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">4.</td>
+                            <td data-title="Doctor's Name :">Dr. Nandini Mazumdar</td>
+                            <td data-title="Specialist :" class="numeric">General Surgent</td>
+                            <td data-title="Time :" class="numeric">09-01 PM & 6.30-08 PM</td>
+                            <td data-title="Fees :" class="numeric">900/-</td>
+                            <td data-title="Ph. No. :" class="numeric">7741012395</td>
+                            <!-- <td data-title="High" class="numeric">$3.00</td>
+                            <td data-title="Low" class="numeric">$2.96</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDNM5209</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">5.</td>
+                            <td data-title="Doctor's Name :">Dr. Pradip kumar Das</td>
+                            <td data-title="Specialist :" class="numeric">Nephrology</td>
+                            <td data-title="Time :" class="numeric">9.30-1.30 PM & 6.30-8 PM</td>
+                            <td data-title="Fees :" class="numeric">2150/-</td>
+                            <td data-title="Ph. No. :" class="numeric">6798201563</td>
+                            <!-- <td data-title="High" class="numeric">$1.93</td>
+                            <td data-title="Low" class="numeric">$1.90</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDPKD7439</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">6.</td>
+                            <td data-title="Doctor's Name :">Dr. Avijit Ghosh</td>
+                            <td data-title="Specialist :" class="numeric">Medicine</td>
+                            <td data-title="Time :" class="numeric">08.30-11 AM & 3-5 PM</td>
+                            <td data-title="Fees :" class="numeric">850/-</td>
+                            <td data-title="Ph. No. :" class="numeric">8024976328</td>
+                            <!-- <td data-title="High" class="numeric">$0.77</td>
+                            <td data-title="Low" class="numeric">$0.76</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDAG8520</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">7.</td>
+                            <td data-title="Doctor's Name :">Dr. Abhijeet Naskar</td>
+                            <td data-title="Specialist :" class="numeric">Pulmonology</td>
+                            <td data-title="Time :" class="numeric">08-10 AM & 03-08 PM</td>
+                            <td data-title="Fees :" class="numeric">2500/-</td>
+                            <td data-title="Ph. No. :" class="numeric">7698100549</td>
+                            <!-- <td data-title="High" class="numeric">$3.72</td>
+                            <td data-title="Low" class="numeric">$3.68</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDAN1298</td>
+                        </tr>
+                        <tr>
+                            <td data-title="Sr. No. :">8.</td>
+                            <td data-title="Doctor's Name :">Dr. Kamini Rao</td>
+                            <td data-title="Specialist :" class="numeric">Gastrology</td>
+                            <td data-title="Time :" class="numeric">09-12 PM & 04-5.30 PM</td>
+                            <td data-title="Fees :" class="numeric">1100/-</td>
+                            <td data-title="Ph. No. :" class="numeric">8402654198</td>
+                            <!-- <td data-title="High" class="numeric">$0.74</td>
+                            <td data-title="Low" class="numeric">$0.72</td> -->
+                            <td data-title="Lc. Reg. No. :" class="numeric">MDKR4560</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- list ends here  -->
+    <br> <br>
+    <!-- form starts Here -->
+    <section class="vh-50 bg-image"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-50">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-5">Book Appointment</h2>
+
+                                <form>
+
+                                    <div class="form-outline mb-3">
+                                        <input type="text" id="form3Example1cg" class="form-control form-control-lg"
+                                            required>
+                                        <label class="form-label" for="form3Example1cg">Your Name</label>
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                            required>
+                                        <label class="form-label" for="form3Example3cg">Your Contact Number</label>
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1" disabled>Choose Slot</option>
+                                            <option value="2" selected>Dr. Soumi Roy Chowdhury</option>
+                                            <option value="3">Dr. Suman Mondal</option>
+                                            <option value="4">Dr. Subhasish Baidya</option>
+                                            <option value="5">Dr. Nandini Mazumdar</option>
+                                            <option value="6">Dr. Pradip kumar Das</option>
+                                            <option value="7">Dr. Avijit Ghosh</option>
+                                            <option value="8">Dr. Abhijeet Naskar</option>
+                                            <option value="9">Dr. Kamini Rao</option>
+                                        </select>
+                                        <label class="form-label" for="form3Example1cg">Doctor's Name</label>
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <textarea class="form-control" rows="3" placeholder="Brief your reasons"
+                                            required></textarea>
+                                        <label class="form-label" for="form3Example1cg">Your Reasons</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="date" id="form3Example4cdg" class="form-control form-control-lg"
+                                            required>
+                                        <label class="form-label" for="form3Example4cdg">Choose Date</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1" disabled>Choose Slot</option>
+                                            <option value="2" selected>Morning</option>
+                                            <option value="3">Day</option>
+                                            <option value="4">Afternoon</option>
+                                            <option value="5">Evening</option>
+                                        </select>
+                                        <label class="form-label" for="form3Example4cdg">Choose Slot</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="time" id="form3Example4cdg" class="form-control form-control-lg"
+                                            required>
+                                        <label class="form-label" for="form3Example4cdg">Slot Time</label>
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <textarea class="form-control" rows="3" placeholder="Describe your issues"
+                                            required></textarea>
+                                        <label class="form-label" for="form3Example3cg">Your Issue</label>
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                        <div class="small text-muted mt-2">Upload your Report or any other perscribed
+                                            medicines relevant file. Max file
+                                            size 50 MB</div>
+                                        <label class="form-label" for="form3Example1cg">Report or Prescribed
+                                            Medicines</label>
+                                    </div>
+
+                                    <div class="form-check d-flex justify-content-center mb-5">
+                                        <input class="form-check-input me-2" type="checkbox" value=""
+                                            id="form2Example3cg" />
+                                        <label class="form-check-label" for="form2Example3g">
+                                            I agree all statements in <a href="#!" class="text-body"><u>Terms of
+                                                    service</u></a>
+                                        </label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button"
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book
+                                            Now</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form ends here  -->
+
+    <!-- place starts here  -->
+    <br><br>
+    <h1 class="text-center">
+        Our Places
+    </h1>
+    <br> <br> <br>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <div class="section_our_solution">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="our_solution_category">
+                    <div class="solution_cards_box">
+                        <div class="solution_card">
+                            <div class="hover_color_bubble"></div>
+                            <div class="so_top_icon">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" height="50" viewBox="0 0 512 512"
+                                    width="40" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="m47.478 452.317 295.441 19.76c5.511.369 10.277-3.8 10.645-9.31l28.393-424.517c.369-5.511-3.8-10.276-9.31-10.645l-295.441-19.76c-5.511-.369-10.276 3.8-10.645 9.31l-28.394 424.517c-.368 5.511 3.8 10.277 9.311 10.645z"
+                                                        fill="#fae19e" />
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <path
+                                                                        d="m17.5 504.177h226.14l79.96-79.605v-355.86c0-5.523-4.477-10-10-10h-296.1c-5.523 0-10 4.477-10 10v425.466c0 5.522 4.477 9.999 10 9.999z"
+                                                                        fill="#fff9e9" />
+                                                                </g>
+                                                                <path
+                                                                    d="m313.601 58.712h-40c5.523 0 10 4.477 10 10v355.861l-.258 40.078 40.258-40.078v-355.861c0-5.523-4.477-10-10-10z"
+                                                                    fill="#fff4d6" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <path d="m243.64 504.177v-70.253c0-5.523 4.477-10 10-10h69.96z"
+                                                        fill="#ffeec2" />
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="m468.636 248.58-33.372.165v-50.826c0-9.183 7.463-16.662 16.673-16.708h.007c9.217-.046 16.693 7.371 16.693 16.562v50.807z"
+                                                    fill="#fed23a" />
+                                                <path
+                                                    d="m451.96 504.177c-10.362-10.277-16.196-24.263-16.208-38.857l-.062-73.973c0-.644.524-1.169 1.171-1.173l30.038-.149c.647-.003 1.171.517 1.171 1.161l.062 74.079c.012 14.531-5.749 28.472-16.015 38.756z"
+                                                    fill="#54b1ff" />
+                                                <path
+                                                    d="m451.959 469.333h-.01c-14.434.072-26.14-11.542-26.14-25.935v-213.527c0-6.778 5.477-12.283 12.255-12.316l27.626-.137c6.826-.034 12.378 5.49 12.378 12.316v213.436c0 14.38-11.687 26.091-26.109 26.163z"
+                                                    fill="#fdf385" />
+                                                <path
+                                                    d="m465.69 217.417-23.769.118c6.037.79 10.708 5.94 10.708 12.198v213.437c0 9.823-5.455 18.397-13.507 22.87 3.79 2.115 8.164 3.317 12.826 3.293h.01c14.422-.072 26.109-11.783 26.109-26.163v-213.436c.001-6.826-5.551-12.351-12.377-12.317z"
+                                                    fill="#faee6e" />
+                                                <path
+                                                    d="m491.274 247.925-71.615.355c-7.305.036-13.226 5.968-13.226 13.248 0 7.281 5.921 13.153 13.226 13.117l58.389-.29v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c0-7.28-5.922-13.152-13.226-13.116z"
+                                                    fill="#54b1ff" />
+                                                <g>
+                                                    <path
+                                                        d="m491.274 247.925-38.441.188-.167 26.311 25.381-.067v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c.001-7.282-5.921-13.154-13.225-13.118z"
+                                                        fill="#3da7ff" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#060606">
+                                            <path
+                                                d="m373.147 20.122-295.44-19.761c-9.631-.638-17.984 6.665-18.629 16.293l-2.311 34.557h-39.267c-9.649 0-17.5 7.851-17.5 17.5v425.466c0 9.649 7.851 17.5 17.5 17.5h226.141c1.96 0 3.902-.801 5.292-2.185l34.138-33.987c.347.074.701.133 1.065.157l58.282 3.898c9.302.614 18.005-6.952 18.629-16.293l28.393-424.515c.639-9.528-6.766-17.993-16.293-18.63zm-122.006 465.902v-52.1c0-1.378 1.122-2.5 2.5-2.5h51.9zm94.939-23.757c-.244 1.51-1.131 2.286-2.66 2.327l-46.28-3.096 31.752-31.611c1.414-1.407 2.209-3.32 2.209-5.315v-355.86c0-9.649-7.851-17.5-17.5-17.5h-77.993c-9.697 0-9.697 15 0 15h77.993c1.379 0 2.5 1.122 2.5 2.5v347.712h-62.46c-9.649 0-17.5 7.851-17.5 17.5v62.753h-218.641c-1.378 0-2.5-1.122-2.5-2.5v-425.465c0-1.378 1.122-2.5 2.5-2.5h178.168c9.697 0 9.697-15 0-15h-123.868l2.244-33.556c.244-1.511 1.131-2.286 2.661-2.327l295.44 19.76c1.511.244 2.287 1.131 2.328 2.661z" />
+                                            <path
+                                                d="m267.827 237.047h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m267.827 289.332h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m55.774 192.262c0 4.142 3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-204.553c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m91.807 139.977c0 4.142 3.358 7.5 7.5 7.5h132.487c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-132.487c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m194.755 438.787c-13.489.036-26.978.065-40.467.086-4.534.007-9.067.013-13.6.016-8.215.006-13.75-1.643-15.59-10.679-1.556-7.64-12.364-6.613-14.464 0-5.19 16.337-13.774 9.936-18.582-1.053-4.797-10.963-6.027-23.233-8.122-34.9-1.54-8.573-14.506-6.17-14.732 1.994-.298 10.751-1.302 21.331-4.031 31.758-2.815 10.758-7.034 21.097-11.222 31.376-3.651 8.961 10.867 12.816 14.464 3.988 3.711-9.108 7.427-18.266 10.193-27.714 5.14 12.36 15.774 26.34 30.927 18.101 2.819-1.533 5.452-3.712 7.763-6.253 7.88 9.106 19.609 8.388 30.584 8.375 15.627-.02 31.254-.054 46.881-.095 9.649-.025 9.667-15.025-.002-15z" />
+                                            <path
+                                                d="m505.932 246.439c-3.897-3.878-9.255-5.867-14.695-6.014l-5.668.028v-10.719c0-6.529-3.878-13.427-9.433-16.862v-15.098c0-31.069-48.372-30.934-48.372.146v15.1c-5.659 3.498-9.455 9.741-9.455 16.852v10.982c-24.966 1.7-25.037 39.745.028 41.232.16 33.575.152 66.6-.028 100.737-.049 9.414 14.949 9.966 15 .079.18-34.166.188-67.22.029-100.823l37.211-.185s-.048 110.848-.048 160.784c0 24.338-37.219 24.5-37.219-.253l.013-13.677c.585-9.68-14.387-10.583-14.973-.904v12.834c0 11 3.402 20.316 9.988 26.869.586 15.693 7.198 30.878 18.369 41.956 3.205 3.18 7.642 2.208 10.744-.182 11.365-11.385 17.769-26.394 18.169-42.414 4.951-4.931 9.908-9.896 9.908-26.896l.006-68.351c12.97 3.689 26.494-6.348 26.494-19.946v-90.672c0-5.523-2.155-10.709-6.068-14.603zm-72.623-5.727v-10.841c0-2.219 1.523-4.08 3.573-4.633l30.025-.149c.84.208 1.615.605 2.243 1.231.915.911 1.419 2.123 1.419 3.414v10.794zm18.671-52c4.604 0 9.155 4.514 9.155 9.062v12.166l-18.372.091v-12.111c.001-5.053 4.133-9.183 9.217-9.208zm-.011 303.901c-3.487-4.942-6.009-10.531-7.417-16.406 2.322.503 4.674.765 7.027.765 2.627 0 5.253-.326 7.839-.957-1.374 5.964-3.892 11.587-7.449 16.598zm45.031-140.899c0 7.101-11.452 7.66-11.452.131 0 0 .013-70.974.021-77.48.005-4.196-3.483-7.509-7.558-7.509l-58.389.29c-7.242 0-7.073-11.331.074-11.366l71.615-.355c3.463.295 5.359 2.168 5.688 5.617v90.672z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="solu_title">
+                                <h3>Kolkata</h3>
+                            </div>
+                            <div class="solu_description">
+                                <p>
+                                    Kolkata's healthcare system encompasses hospitals, clinics, and specialized
+                                    services, catering to the diverse medical needs of its residents.
+                                </p>
+                                <button type="button" class="read_more_btn">Read More</button>
+                            </div>
+                        </div>
+                        <div class="solution_card">
+                            <div class="hover_color_bubble"></div>
+                            <div class="so_top_icon">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" height="50" viewBox="0 0 512 512"
+                                    width="40" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="m47.478 452.317 295.441 19.76c5.511.369 10.277-3.8 10.645-9.31l28.393-424.517c.369-5.511-3.8-10.276-9.31-10.645l-295.441-19.76c-5.511-.369-10.276 3.8-10.645 9.31l-28.394 424.517c-.368 5.511 3.8 10.277 9.311 10.645z"
+                                                        fill="#fae19e" />
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <path
+                                                                        d="m17.5 504.177h226.14l79.96-79.605v-355.86c0-5.523-4.477-10-10-10h-296.1c-5.523 0-10 4.477-10 10v425.466c0 5.522 4.477 9.999 10 9.999z"
+                                                                        fill="#fff9e9" />
+                                                                </g>
+                                                                <path
+                                                                    d="m313.601 58.712h-40c5.523 0 10 4.477 10 10v355.861l-.258 40.078 40.258-40.078v-355.861c0-5.523-4.477-10-10-10z"
+                                                                    fill="#fff4d6" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <path d="m243.64 504.177v-70.253c0-5.523 4.477-10 10-10h69.96z"
+                                                        fill="#ffeec2" />
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="m468.636 248.58-33.372.165v-50.826c0-9.183 7.463-16.662 16.673-16.708h.007c9.217-.046 16.693 7.371 16.693 16.562v50.807z"
+                                                    fill="#fed23a" />
+                                                <path
+                                                    d="m451.96 504.177c-10.362-10.277-16.196-24.263-16.208-38.857l-.062-73.973c0-.644.524-1.169 1.171-1.173l30.038-.149c.647-.003 1.171.517 1.171 1.161l.062 74.079c.012 14.531-5.749 28.472-16.015 38.756z"
+                                                    fill="#54b1ff" />
+                                                <path
+                                                    d="m451.959 469.333h-.01c-14.434.072-26.14-11.542-26.14-25.935v-213.527c0-6.778 5.477-12.283 12.255-12.316l27.626-.137c6.826-.034 12.378 5.49 12.378 12.316v213.436c0 14.38-11.687 26.091-26.109 26.163z"
+                                                    fill="#fdf385" />
+                                                <path
+                                                    d="m465.69 217.417-23.769.118c6.037.79 10.708 5.94 10.708 12.198v213.437c0 9.823-5.455 18.397-13.507 22.87 3.79 2.115 8.164 3.317 12.826 3.293h.01c14.422-.072 26.109-11.783 26.109-26.163v-213.436c.001-6.826-5.551-12.351-12.377-12.317z"
+                                                    fill="#faee6e" />
+                                                <path
+                                                    d="m491.274 247.925-71.615.355c-7.305.036-13.226 5.968-13.226 13.248 0 7.281 5.921 13.153 13.226 13.117l58.389-.29v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c0-7.28-5.922-13.152-13.226-13.116z"
+                                                    fill="#54b1ff" />
+                                                <g>
+                                                    <path
+                                                        d="m491.274 247.925-38.441.188-.167 26.311 25.381-.067v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c.001-7.282-5.921-13.154-13.225-13.118z"
+                                                        fill="#3da7ff" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#060606">
+                                            <path
+                                                d="m373.147 20.122-295.44-19.761c-9.631-.638-17.984 6.665-18.629 16.293l-2.311 34.557h-39.267c-9.649 0-17.5 7.851-17.5 17.5v425.466c0 9.649 7.851 17.5 17.5 17.5h226.141c1.96 0 3.902-.801 5.292-2.185l34.138-33.987c.347.074.701.133 1.065.157l58.282 3.898c9.302.614 18.005-6.952 18.629-16.293l28.393-424.515c.639-9.528-6.766-17.993-16.293-18.63zm-122.006 465.902v-52.1c0-1.378 1.122-2.5 2.5-2.5h51.9zm94.939-23.757c-.244 1.51-1.131 2.286-2.66 2.327l-46.28-3.096 31.752-31.611c1.414-1.407 2.209-3.32 2.209-5.315v-355.86c0-9.649-7.851-17.5-17.5-17.5h-77.993c-9.697 0-9.697 15 0 15h77.993c1.379 0 2.5 1.122 2.5 2.5v347.712h-62.46c-9.649 0-17.5 7.851-17.5 17.5v62.753h-218.641c-1.378 0-2.5-1.122-2.5-2.5v-425.465c0-1.378 1.122-2.5 2.5-2.5h178.168c9.697 0 9.697-15 0-15h-123.868l2.244-33.556c.244-1.511 1.131-2.286 2.661-2.327l295.44 19.76c1.511.244 2.287 1.131 2.328 2.661z" />
+                                            <path
+                                                d="m267.827 237.047h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m267.827 289.332h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m55.774 192.262c0 4.142 3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-204.553c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m91.807 139.977c0 4.142 3.358 7.5 7.5 7.5h132.487c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-132.487c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m194.755 438.787c-13.489.036-26.978.065-40.467.086-4.534.007-9.067.013-13.6.016-8.215.006-13.75-1.643-15.59-10.679-1.556-7.64-12.364-6.613-14.464 0-5.19 16.337-13.774 9.936-18.582-1.053-4.797-10.963-6.027-23.233-8.122-34.9-1.54-8.573-14.506-6.17-14.732 1.994-.298 10.751-1.302 21.331-4.031 31.758-2.815 10.758-7.034 21.097-11.222 31.376-3.651 8.961 10.867 12.816 14.464 3.988 3.711-9.108 7.427-18.266 10.193-27.714 5.14 12.36 15.774 26.34 30.927 18.101 2.819-1.533 5.452-3.712 7.763-6.253 7.88 9.106 19.609 8.388 30.584 8.375 15.627-.02 31.254-.054 46.881-.095 9.649-.025 9.667-15.025-.002-15z" />
+                                            <path
+                                                d="m505.932 246.439c-3.897-3.878-9.255-5.867-14.695-6.014l-5.668.028v-10.719c0-6.529-3.878-13.427-9.433-16.862v-15.098c0-31.069-48.372-30.934-48.372.146v15.1c-5.659 3.498-9.455 9.741-9.455 16.852v10.982c-24.966 1.7-25.037 39.745.028 41.232.16 33.575.152 66.6-.028 100.737-.049 9.414 14.949 9.966 15 .079.18-34.166.188-67.22.029-100.823l37.211-.185s-.048 110.848-.048 160.784c0 24.338-37.219 24.5-37.219-.253l.013-13.677c.585-9.68-14.387-10.583-14.973-.904v12.834c0 11 3.402 20.316 9.988 26.869.586 15.693 7.198 30.878 18.369 41.956 3.205 3.18 7.642 2.208 10.744-.182 11.365-11.385 17.769-26.394 18.169-42.414 4.951-4.931 9.908-9.896 9.908-26.896l.006-68.351c12.97 3.689 26.494-6.348 26.494-19.946v-90.672c0-5.523-2.155-10.709-6.068-14.603zm-72.623-5.727v-10.841c0-2.219 1.523-4.08 3.573-4.633l30.025-.149c.84.208 1.615.605 2.243 1.231.915.911 1.419 2.123 1.419 3.414v10.794zm18.671-52c4.604 0 9.155 4.514 9.155 9.062v12.166l-18.372.091v-12.111c.001-5.053 4.133-9.183 9.217-9.208zm-.011 303.901c-3.487-4.942-6.009-10.531-7.417-16.406 2.322.503 4.674.765 7.027.765 2.627 0 5.253-.326 7.839-.957-1.374 5.964-3.892 11.587-7.449 16.598zm45.031-140.899c0 7.101-11.452 7.66-11.452.131 0 0 .013-70.974.021-77.48.005-4.196-3.483-7.509-7.558-7.509l-58.389.29c-7.242 0-7.073-11.331.074-11.366l71.615-.355c3.463.295 5.359 2.168 5.688 5.617v90.672z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="solu_title">
+                                <h3>Bangalore</h3>
+                            </div>
+                            <div class="solu_description">
+                                <p>
+
+                                    Bangalore's healthcare system, with its numerous hospitals and facilities, ensures
+                                    accessible and comprehensive medical services for residents.
+                                </p>
+                                <button type="button" class="read_more_btn">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="solution_cards_box sol_card_top_3">
+                        <div class="solution_card">
+                            <div class="hover_color_bubble"></div>
+                            <div class="so_top_icon">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" height="50" viewBox="0 0 512 512"
+                                    width="40" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="m47.478 452.317 295.441 19.76c5.511.369 10.277-3.8 10.645-9.31l28.393-424.517c.369-5.511-3.8-10.276-9.31-10.645l-295.441-19.76c-5.511-.369-10.276 3.8-10.645 9.31l-28.394 424.517c-.368 5.511 3.8 10.277 9.311 10.645z"
+                                                        fill="#fae19e" />
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <path
+                                                                        d="m17.5 504.177h226.14l79.96-79.605v-355.86c0-5.523-4.477-10-10-10h-296.1c-5.523 0-10 4.477-10 10v425.466c0 5.522 4.477 9.999 10 9.999z"
+                                                                        fill="#fff9e9" />
+                                                                </g>
+                                                                <path
+                                                                    d="m313.601 58.712h-40c5.523 0 10 4.477 10 10v355.861l-.258 40.078 40.258-40.078v-355.861c0-5.523-4.477-10-10-10z"
+                                                                    fill="#fff4d6" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <path d="m243.64 504.177v-70.253c0-5.523 4.477-10 10-10h69.96z"
+                                                        fill="#ffeec2" />
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="m468.636 248.58-33.372.165v-50.826c0-9.183 7.463-16.662 16.673-16.708h.007c9.217-.046 16.693 7.371 16.693 16.562v50.807z"
+                                                    fill="#fed23a" />
+                                                <path
+                                                    d="m451.96 504.177c-10.362-10.277-16.196-24.263-16.208-38.857l-.062-73.973c0-.644.524-1.169 1.171-1.173l30.038-.149c.647-.003 1.171.517 1.171 1.161l.062 74.079c.012 14.531-5.749 28.472-16.015 38.756z"
+                                                    fill="#54b1ff" />
+                                                <path
+                                                    d="m451.959 469.333h-.01c-14.434.072-26.14-11.542-26.14-25.935v-213.527c0-6.778 5.477-12.283 12.255-12.316l27.626-.137c6.826-.034 12.378 5.49 12.378 12.316v213.436c0 14.38-11.687 26.091-26.109 26.163z"
+                                                    fill="#fdf385" />
+                                                <path
+                                                    d="m465.69 217.417-23.769.118c6.037.79 10.708 5.94 10.708 12.198v213.437c0 9.823-5.455 18.397-13.507 22.87 3.79 2.115 8.164 3.317 12.826 3.293h.01c14.422-.072 26.109-11.783 26.109-26.163v-213.436c.001-6.826-5.551-12.351-12.377-12.317z"
+                                                    fill="#faee6e" />
+                                                <path
+                                                    d="m491.274 247.925-71.615.355c-7.305.036-13.226 5.968-13.226 13.248 0 7.281 5.921 13.153 13.226 13.117l58.389-.29v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c0-7.28-5.922-13.152-13.226-13.116z"
+                                                    fill="#54b1ff" />
+                                                <g>
+                                                    <path
+                                                        d="m491.274 247.925-38.441.188-.167 26.311 25.381-.067v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c.001-7.282-5.921-13.154-13.225-13.118z"
+                                                        fill="#3da7ff" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#060606">
+                                            <path
+                                                d="m373.147 20.122-295.44-19.761c-9.631-.638-17.984 6.665-18.629 16.293l-2.311 34.557h-39.267c-9.649 0-17.5 7.851-17.5 17.5v425.466c0 9.649 7.851 17.5 17.5 17.5h226.141c1.96 0 3.902-.801 5.292-2.185l34.138-33.987c.347.074.701.133 1.065.157l58.282 3.898c9.302.614 18.005-6.952 18.629-16.293l28.393-424.515c.639-9.528-6.766-17.993-16.293-18.63zm-122.006 465.902v-52.1c0-1.378 1.122-2.5 2.5-2.5h51.9zm94.939-23.757c-.244 1.51-1.131 2.286-2.66 2.327l-46.28-3.096 31.752-31.611c1.414-1.407 2.209-3.32 2.209-5.315v-355.86c0-9.649-7.851-17.5-17.5-17.5h-77.993c-9.697 0-9.697 15 0 15h77.993c1.379 0 2.5 1.122 2.5 2.5v347.712h-62.46c-9.649 0-17.5 7.851-17.5 17.5v62.753h-218.641c-1.378 0-2.5-1.122-2.5-2.5v-425.465c0-1.378 1.122-2.5 2.5-2.5h178.168c9.697 0 9.697-15 0-15h-123.868l2.244-33.556c.244-1.511 1.131-2.286 2.661-2.327l295.44 19.76c1.511.244 2.287 1.131 2.328 2.661z" />
+                                            <path
+                                                d="m267.827 237.047h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m267.827 289.332h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m55.774 192.262c0 4.142 3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-204.553c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m91.807 139.977c0 4.142 3.358 7.5 7.5 7.5h132.487c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-132.487c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m194.755 438.787c-13.489.036-26.978.065-40.467.086-4.534.007-9.067.013-13.6.016-8.215.006-13.75-1.643-15.59-10.679-1.556-7.64-12.364-6.613-14.464 0-5.19 16.337-13.774 9.936-18.582-1.053-4.797-10.963-6.027-23.233-8.122-34.9-1.54-8.573-14.506-6.17-14.732 1.994-.298 10.751-1.302 21.331-4.031 31.758-2.815 10.758-7.034 21.097-11.222 31.376-3.651 8.961 10.867 12.816 14.464 3.988 3.711-9.108 7.427-18.266 10.193-27.714 5.14 12.36 15.774 26.34 30.927 18.101 2.819-1.533 5.452-3.712 7.763-6.253 7.88 9.106 19.609 8.388 30.584 8.375 15.627-.02 31.254-.054 46.881-.095 9.649-.025 9.667-15.025-.002-15z" />
+                                            <path
+                                                d="m505.932 246.439c-3.897-3.878-9.255-5.867-14.695-6.014l-5.668.028v-10.719c0-6.529-3.878-13.427-9.433-16.862v-15.098c0-31.069-48.372-30.934-48.372.146v15.1c-5.659 3.498-9.455 9.741-9.455 16.852v10.982c-24.966 1.7-25.037 39.745.028 41.232.16 33.575.152 66.6-.028 100.737-.049 9.414 14.949 9.966 15 .079.18-34.166.188-67.22.029-100.823l37.211-.185s-.048 110.848-.048 160.784c0 24.338-37.219 24.5-37.219-.253l.013-13.677c.585-9.68-14.387-10.583-14.973-.904v12.834c0 11 3.402 20.316 9.988 26.869.586 15.693 7.198 30.878 18.369 41.956 3.205 3.18 7.642 2.208 10.744-.182 11.365-11.385 17.769-26.394 18.169-42.414 4.951-4.931 9.908-9.896 9.908-26.896l.006-68.351c12.97 3.689 26.494-6.348 26.494-19.946v-90.672c0-5.523-2.155-10.709-6.068-14.603zm-72.623-5.727v-10.841c0-2.219 1.523-4.08 3.573-4.633l30.025-.149c.84.208 1.615.605 2.243 1.231.915.911 1.419 2.123 1.419 3.414v10.794zm18.671-52c4.604 0 9.155 4.514 9.155 9.062v12.166l-18.372.091v-12.111c.001-5.053 4.133-9.183 9.217-9.208zm-.011 303.901c-3.487-4.942-6.009-10.531-7.417-16.406 2.322.503 4.674.765 7.027.765 2.627 0 5.253-.326 7.839-.957-1.374 5.964-3.892 11.587-7.449 16.598zm45.031-140.899c0 7.101-11.452 7.66-11.452.131 0 0 .013-70.974.021-77.48.005-4.196-3.483-7.509-7.558-7.509l-58.389.29c-7.242 0-7.073-11.331.074-11.366l71.615-.355c3.463.295 5.359 2.168 5.688 5.617v90.672z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="solu_title">
+                                <h3>Mumbai</h3>
+                            </div>
+                            <div class="solu_description">
+                                <p>
+
+                                    Mumbai's healthcare system, marked by numerous hospitals and diverse facilities,
+                                    caters to the varied medical needs of its residents.
+                                </p>
+                                <button type="button" class="read_more_btn">Read More</button>
+                            </div>
+                        </div>
+                        <div class="solution_card">
+                            <div class="hover_color_bubble"></div>
+                            <div class="so_top_icon">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" height="50" viewBox="0 0 512 512"
+                                    width="40" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="m47.478 452.317 295.441 19.76c5.511.369 10.277-3.8 10.645-9.31l28.393-424.517c.369-5.511-3.8-10.276-9.31-10.645l-295.441-19.76c-5.511-.369-10.276 3.8-10.645 9.31l-28.394 424.517c-.368 5.511 3.8 10.277 9.311 10.645z"
+                                                        fill="#fae19e" />
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <path
+                                                                        d="m17.5 504.177h226.14l79.96-79.605v-355.86c0-5.523-4.477-10-10-10h-296.1c-5.523 0-10 4.477-10 10v425.466c0 5.522 4.477 9.999 10 9.999z"
+                                                                        fill="#fff9e9" />
+                                                                </g>
+                                                                <path
+                                                                    d="m313.601 58.712h-40c5.523 0 10 4.477 10 10v355.861l-.258 40.078 40.258-40.078v-355.861c0-5.523-4.477-10-10-10z"
+                                                                    fill="#fff4d6" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <path d="m243.64 504.177v-70.253c0-5.523 4.477-10 10-10h69.96z"
+                                                        fill="#ffeec2" />
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="m468.636 248.58-33.372.165v-50.826c0-9.183 7.463-16.662 16.673-16.708h.007c9.217-.046 16.693 7.371 16.693 16.562v50.807z"
+                                                    fill="#fed23a" />
+                                                <path
+                                                    d="m451.96 504.177c-10.362-10.277-16.196-24.263-16.208-38.857l-.062-73.973c0-.644.524-1.169 1.171-1.173l30.038-.149c.647-.003 1.171.517 1.171 1.161l.062 74.079c.012 14.531-5.749 28.472-16.015 38.756z"
+                                                    fill="#54b1ff" />
+                                                <path
+                                                    d="m451.959 469.333h-.01c-14.434.072-26.14-11.542-26.14-25.935v-213.527c0-6.778 5.477-12.283 12.255-12.316l27.626-.137c6.826-.034 12.378 5.49 12.378 12.316v213.436c0 14.38-11.687 26.091-26.109 26.163z"
+                                                    fill="#fdf385" />
+                                                <path
+                                                    d="m465.69 217.417-23.769.118c6.037.79 10.708 5.94 10.708 12.198v213.437c0 9.823-5.455 18.397-13.507 22.87 3.79 2.115 8.164 3.317 12.826 3.293h.01c14.422-.072 26.109-11.783 26.109-26.163v-213.436c.001-6.826-5.551-12.351-12.377-12.317z"
+                                                    fill="#faee6e" />
+                                                <path
+                                                    d="m491.274 247.925-71.615.355c-7.305.036-13.226 5.968-13.226 13.248 0 7.281 5.921 13.153 13.226 13.117l58.389-.29v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c0-7.28-5.922-13.152-13.226-13.116z"
+                                                    fill="#54b1ff" />
+                                                <g>
+                                                    <path
+                                                        d="m491.274 247.925-38.441.188-.167 26.311 25.381-.067v77.489c0 7.281 5.921 13.153 13.226 13.117 7.305-.036 13.226-5.968 13.226-13.248v-90.672c.001-7.282-5.921-13.154-13.225-13.118z"
+                                                        fill="#3da7ff" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#060606">
+                                            <path
+                                                d="m373.147 20.122-295.44-19.761c-9.631-.638-17.984 6.665-18.629 16.293l-2.311 34.557h-39.267c-9.649 0-17.5 7.851-17.5 17.5v425.466c0 9.649 7.851 17.5 17.5 17.5h226.141c1.96 0 3.902-.801 5.292-2.185l34.138-33.987c.347.074.701.133 1.065.157l58.282 3.898c9.302.614 18.005-6.952 18.629-16.293l28.393-424.515c.639-9.528-6.766-17.993-16.293-18.63zm-122.006 465.902v-52.1c0-1.378 1.122-2.5 2.5-2.5h51.9zm94.939-23.757c-.244 1.51-1.131 2.286-2.66 2.327l-46.28-3.096 31.752-31.611c1.414-1.407 2.209-3.32 2.209-5.315v-355.86c0-9.649-7.851-17.5-17.5-17.5h-77.993c-9.697 0-9.697 15 0 15h77.993c1.379 0 2.5 1.122 2.5 2.5v347.712h-62.46c-9.649 0-17.5 7.851-17.5 17.5v62.753h-218.641c-1.378 0-2.5-1.122-2.5-2.5v-425.465c0-1.378 1.122-2.5 2.5-2.5h178.168c9.697 0 9.697-15 0-15h-123.868l2.244-33.556c.244-1.511 1.131-2.286 2.661-2.327l295.44 19.76c1.511.244 2.287 1.131 2.328 2.661z" />
+                                            <path
+                                                d="m267.827 237.047h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m267.827 289.332h-204.553c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+                                            <path
+                                                d="m55.774 192.262c0 4.142 3.358 7.5 7.5 7.5h204.553c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-204.553c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m91.807 139.977c0 4.142 3.358 7.5 7.5 7.5h132.487c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-132.487c-4.142 0-7.5 3.358-7.5 7.5z" />
+                                            <path
+                                                d="m194.755 438.787c-13.489.036-26.978.065-40.467.086-4.534.007-9.067.013-13.6.016-8.215.006-13.75-1.643-15.59-10.679-1.556-7.64-12.364-6.613-14.464 0-5.19 16.337-13.774 9.936-18.582-1.053-4.797-10.963-6.027-23.233-8.122-34.9-1.54-8.573-14.506-6.17-14.732 1.994-.298 10.751-1.302 21.331-4.031 31.758-2.815 10.758-7.034 21.097-11.222 31.376-3.651 8.961 10.867 12.816 14.464 3.988 3.711-9.108 7.427-18.266 10.193-27.714 5.14 12.36 15.774 26.34 30.927 18.101 2.819-1.533 5.452-3.712 7.763-6.253 7.88 9.106 19.609 8.388 30.584 8.375 15.627-.02 31.254-.054 46.881-.095 9.649-.025 9.667-15.025-.002-15z" />
+                                            <path
+                                                d="m505.932 246.439c-3.897-3.878-9.255-5.867-14.695-6.014l-5.668.028v-10.719c0-6.529-3.878-13.427-9.433-16.862v-15.098c0-31.069-48.372-30.934-48.372.146v15.1c-5.659 3.498-9.455 9.741-9.455 16.852v10.982c-24.966 1.7-25.037 39.745.028 41.232.16 33.575.152 66.6-.028 100.737-.049 9.414 14.949 9.966 15 .079.18-34.166.188-67.22.029-100.823l37.211-.185s-.048 110.848-.048 160.784c0 24.338-37.219 24.5-37.219-.253l.013-13.677c.585-9.68-14.387-10.583-14.973-.904v12.834c0 11 3.402 20.316 9.988 26.869.586 15.693 7.198 30.878 18.369 41.956 3.205 3.18 7.642 2.208 10.744-.182 11.365-11.385 17.769-26.394 18.169-42.414 4.951-4.931 9.908-9.896 9.908-26.896l.006-68.351c12.97 3.689 26.494-6.348 26.494-19.946v-90.672c0-5.523-2.155-10.709-6.068-14.603zm-72.623-5.727v-10.841c0-2.219 1.523-4.08 3.573-4.633l30.025-.149c.84.208 1.615.605 2.243 1.231.915.911 1.419 2.123 1.419 3.414v10.794zm18.671-52c4.604 0 9.155 4.514 9.155 9.062v12.166l-18.372.091v-12.111c.001-5.053 4.133-9.183 9.217-9.208zm-.011 303.901c-3.487-4.942-6.009-10.531-7.417-16.406 2.322.503 4.674.765 7.027.765 2.627 0 5.253-.326 7.839-.957-1.374 5.964-3.892 11.587-7.449 16.598zm45.031-140.899c0 7.101-11.452 7.66-11.452.131 0 0 .013-70.974.021-77.48.005-4.196-3.483-7.509-7.558-7.509l-58.389.29c-7.242 0-7.073-11.331.074-11.366l71.615-.355c3.463.295 5.359 2.168 5.688 5.617v90.672z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="solu_title">
+                                <h3>Delhi</h3>
+                            </div>
+                            <div class="solu_description">
+                                <p>
+                                    Delhi's healthcare, with its many hospitals, ensures comprehensive services for the
+                                    diverse health needs of its residents.
+                                </p>
+                                <button type="button" class="read_more_btn">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- place ends here  -->
+
+    <br> <br>
+    <!-- footer starts here  -->
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>healthcare@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="../index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png"
+                                        class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://twitter.com/"><i class="fa fa-twitter-square"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fa fa-instagram"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"
+                                        style="font-size:24px"></i></a>
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"
+                                        style="font-size:24px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- another footer  -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container my-5">
+
+            <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">About Healthcare.in</h5>
+
+                            <p>
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti.
+                            </p>
+
+                            <p>
+                                Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                molestias.
+                            </p>
+
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                            <table class="table text-center text-white">
+                                <tbody class="font-weight-normal">
+                                    <tr>
+                                        <td>Mon - Thu:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri - Sat:</td>
+                                        <td>8.30am - 8pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>9am - 10pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+
+            </footer>
+
+        </div>
+        <!-- End of .container -->
+
+        </div>
+        <!-- End of .container -->
+
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, All Right Reserved <b><a href="../index.html">Healthcare.in</a></b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer ends here  -->
+
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Appointment alert!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you confirm your appointment?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="checkbox" class="btn btn-primary">Yes </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

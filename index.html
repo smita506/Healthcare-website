@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare App Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <!-- icon css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- footer css  -->
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- css pg link  -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- nav starts here  -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Healthcare.in</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Health Care</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/appointment.html">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/login.html">LogIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">LogOut</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br> <br>
+  <!-- nav ends here  -->
+
+  <!-- --Caurosale starts here------ -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/homea1.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Helicopter flying in India has gained prominence over the years, serving various purposes ranging from tourism and emergency medical services to transportation and defense operations. Here are some key points regarding helicopter flying in India</p>
+            </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/homea2.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Helicopter flying in India has gained prominence over the years, serving various purposes ranging from tourism and emergency medical services to transportation and defense operations. Here are some key points regarding helicopter flying in India</p>
+            </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/homea3.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Helicopter flying in India has gained prominence over the years, serving various purposes ranging from tourism and emergency medical services to transportation and defense operations. Here are some key points regarding helicopter flying in India</p>
+            </div> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- -Caurosale ends here---------- -->
+
+  <!-- health card starts here  -->
+  <!-- grid  -->
+  <div class="g1">
+    <section id="our-program">
+      <div class="container">
+
+        <div class="top text-center">
+          <h1 style="color:#029eb7">Health Insurances</h1>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="card-img-top1">
+                <img src="images/c1.png" alt="">
+              </div>
+              <div class="card-block1">
+                <h4 class="card-title1">Silver Health Insurance</h4>
+                <p class="card-text1">
+                  Health insurance offers financial security by covering medical expenses, ensuring individuals can
+                  access necessary healthcare without significant financial strain.</p>
+                <p class="inr">$10/Month</p>
+                <button class="card-footer1">Activate Plan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="card-img-top1">
+                <img src="images/c2.png" alt="">
+              </div>
+              <div class="card-block1">
+                <h4 class="card-title1">Gold Health Insurance</h4>
+                <p class="card-text1">
+
+                  Health insurance offers financial security by covering medical expenses, ensuring individuals can
+                  access necessary healthcare without significant financial strain.</p>
+                <p class="inr">$15/Month</p>
+                <button class="card-footer1">Activate Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="card-img-top1">
+                <img src="images/c3.png" alt="">
+              </div>
+              <div class="card-block1">
+                <h4 class="card-title1">Premimum Health Insurance</h4>
+                <p class="card-text1">
+                  Health insurance offers financial security by covering medical expenses, ensuring individuals can
+                  access necessary healthcare without significant financial strain.</p>
+                <p class="inr">$20/Month</p>
+                <button class="card-footer1">Activate Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- health card ends here  -->
+
+  <!-- blood test starts here  -->
+  <div class="top text-center">
+    <h1 style="color:#029eb7">Blood Tests</h1>
+  </div>
+
+  <div class="btest">
+    <div class="cont">
+      <div class="cards">
+        <!-- left side -->
+        <!-- Card One -->
+        <div class="left-side">
+          <div class="single-card one">
+            <div class="card-items">
+              <div class="client-info">
+                <div class="client-img">
+                  <a href="https://ibb.co/8rRdb5H"><img src="images/bdrop.png" alt="avatar-2027365-640"
+                      border="0" /></a>
+                </div>
+                <div class="client-heading">
+                  <h4>Healthcare.in</h4>
+                  <p>Clinic & Diagnostics</p>
+                </div>
+              </div>
+              <div class="card-desc">
+                <h3>
+                  Allergy and autoimmune condition tests.
+
+                </h3>
+              </div>
+              <div class="card-quote">
+                <p>
+
+                  Allergy tests identify hypersensitivity reactions to external substances by measuring specific IgE
+                  antibodies, whereas autoimmune condition tests detect self-directed immune responses, such as the
+                  presence of autoantibodies or abnormal cytokine patterns, indicative of the immune system mistakenly
+                  attacking the body's own cells and tissues.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Two -->
+          <div class="single-card two">
+            <div class="card-items">
+              <div class="client-info">
+                <div class="client-img">
+                  <a href="https://ibb.co/8rRdb5H"><img src="images/bdrop.png" alt="avatar-2027365-640"
+                      border="0" /></a>
+                </div>
+                <div class="client-heading">
+                  <h4>Healthcare.in</h4>
+                  <p>Clinic & Diagnostics</p>
+                </div>
+              </div>
+              <div class="card-desc">
+                <h3>
+                  Basic blood chemistry tests. </h3>
+              </div>
+              <div class="card-quote">
+                <p>
+
+                  Basic blood chemistry tests assess key parameters like glucose, cholesterol, electrolytes, and liver
+                  enzymes to evaluate overall health and organ function.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Three -->
+          <div class="single-card three">
+            <div class="card-items">
+              <div class="client-info">
+                <div class="client-img">
+                  <a href="https://ibb.co/8rRdb5H"><img src="images/bdrop.png" alt="avatar-2027365-640"
+                      border="0" /></a>
+                </div>
+                <div class="client-heading">
+                  <h4>Healthcare.in</h4>
+                  <p>Clinic & Diagnostics</p>
+                </div>
+              </div>
+              <div class="card-desc">
+                <h3>
+                  Lipid panel (Cholesterol test). </h3>
+              </div>
+              <div class="card-quote">
+                <p>
+                  A lipid panel, or cholesterol test, measures levels of cholesterol and triglycerides in the blood,
+                  aiding in the assessment of cardiovascular health.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Four -->
+          <div class="single-card four">
+            <div class="card-items">
+              <div class="client-info">
+                <div class="client-img">
+                  <a href="https://ibb.co/8rRdb5H"><img src="images/bdrop.png" alt="avatar-2027365-640"
+                      border="0" /></a>
+                </div>
+                <div class="client-heading">
+                  <h4>Healthcare.in</h4>
+                  <p>Clinic & Diagnostics</p>
+                </div>
+              </div>
+              <div class="card-desc">
+                <h3>
+                  Blood tests to check for anemia and other blood cell problems.
+
+                </h3>
+              </div>
+              <div class="card-quote">
+                <p>
+
+
+                  Blood tests for anemia and blood cell problems evaluate factors such as hemoglobin and cell counts,
+                  offering insights into oxygen-carrying capacity and overall blood health, aiding in the diagnosis of
+                  conditions like anemia and blood disorders. These tests are crucial for assessing and monitoring
+                  hematological well-being.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side -->
+        <!-- Card Five-->
+        <div class="right-side">
+          <div class="single-card five">
+            <div class="card-items">
+              <div class="client-info">
+                <div class="client-img">
+                  <a href="https://ibb.co/8rRdb5H"><img src="images/bdrop.png" alt="avatar-2027365-640"
+                      border="0" /></a>
+                </div>
+                <div class="client-heading">
+                  <h4>Healthcare.in</h4>
+                  <p>Clinic & Diagnostics</p>
+                </div>
+              </div>
+              <div class="card-desc">
+                <h3>
+                  Thyroid peroxidase antibodies, Thyroid stimulating hormone (TSH) and Blood sugar (glucose) tests.
+                </h3>
+              </div>
+              <div class="card-quote">
+                <p>
+
+
+                  Thyroid peroxidase antibodies and Thyroid Stimulating Hormone (TSH) tests are instrumental in
+                  evaluating thyroid function, helping diagnose conditions such as Hashimoto's thyroiditis or
+                  hyperthyroidism, while blood sugar (glucose) tests monitor levels to assess metabolic health and
+                  identify conditions like diabetes. These three tests collectively provide valuable insights into
+                  endocrine balance and metabolic regulation, enabling healthcare professionals to tailor interventions
+                  and treatment plans for optimal patient care.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blood test ends here  -->
+  <br>
+
+  <!-- doctor check start  -->
+  <div class="top text-center">
+    <h1 style="color:#029eb7">Unraveling Health through Comprehensive Testing</h1>
+  </div>
+
+  <div class="deas">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds1.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Cardiologist</h5>
+        <p class="card-text">
+          A cardiologist is a heart specialist who diagnoses and treats conditions related to the cardiovascular system.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Soumi Roy Chowdhury</li>
+        <li class="list-group-item">Time: Mon, Wed, Fri</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds2.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Neurologist</h5>
+        <p class="card-text">
+
+          A neurologist focuses on diagnosing and treating disorders of the nervous system, including the brain and
+          spinal cord.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Suman Mondal</li>
+        <li class="list-group-item">Time: Tue, Thu, Sat</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds3.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Orthopedic</h5>
+        <p class="card-text">An orthopedic doctor deals with musculoskeletal issues, including bones and joints.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Subhasish Baidya</li>
+        <li class="list-group-item">Time: Tue, Thu, Sat, Sun</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds4.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">General Surgery</h5>
+        <p class="card-text">
+          A general surgeon is a medical doctor who performs a wide range of surgical procedures to address various
+          medical conditions and injuries.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Nandini Mazumdar</li>
+        <li class="list-group-item">Time: Sun, Mon, Wed, Fri</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds5.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Nephrology</h5>
+        <p class="card-text">
+          Nephrology is the branch of medicine focused on the diagnosis and treatment of kidney diseases and disorders.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Pradip kumar Das</li>
+        <li class="list-group-item">Time: Sat, Sun</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds6.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Medicine</h5>
+        <p class="card-text">Medicine involves preventing, diagnosing, and treating illnesses across various medical
+          specialties.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Avijit Ghosh</li>
+        <li class="list-group-item">Time: Tue, Wed, Fri</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds7.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Pulmonology</h5>
+        <p class="card-text">
+          Pulmonology specializes in diagnosing and treating respiratory system disorders, including lung and airway
+          conditions.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Abhijeet Naskar</li>
+        <li class="list-group-item">Time: Mon, Thu</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/ds8.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Gastrology</h5>
+        <p class="card-text">
+          Gastroenterology addresses disorders of the digestive system, including the stomach, intestines, liver, and
+          pancreas.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dr. Kamini Rao</li>
+        <li class="list-group-item">Time: Sat, Sun, Mon</li>
+        <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+      </ul>
+      <!-- <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div> -->
+    </div>
+  </div>
+  <br>
+  <div class="btn1app">
+    <a href="html/appointment.html"><button class="btnapp">Make Your Appointment</button></a>
+  </div>
+  <!-- doctor check ends  -->
+  <br> <br>
+
+  <!-- footer starts here  -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>1010 Avenue, sw 54321, bangalore</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>9876543210</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>healthcare@info.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididuntut consec tetur adipisicing
+                  elit,Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="https://twitter.com/"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" style="font-size:24px"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+                  <button><i class="fab fa-telegram-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- another footer  -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+
+      <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">About Healthcare.in</h5>
+
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                voluptatum deleniti atque corrupti.
+              </p>
+
+              <p>
+                Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                molestias.
+              </p>
+
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+              <table class="table text-center text-white">
+                <tbody class="font-weight-normal">
+                  <tr>
+                    <td>Mon - Thu:</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Fri - Sat:</td>
+                    <td>8.30am - 8pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday:</td>
+                    <td>9am - 10pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+
+      </footer>
+
+    </div>
+    <!-- End of .container -->
+
+    </div>
+    <!-- End of .container -->
+
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023, All Right Reserved <b><a href="../index.html">Healthcare.in</a></b>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer ends here  -->
+
+</body>
+
+</html>
